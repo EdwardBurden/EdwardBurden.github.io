@@ -1,16 +1,8 @@
-<!--<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
--->
-
-
-<nav id="palette-display">
+<nav class="navbar">
   <ul>
   {% for item in site.data.navigation %}
-  <li id="{{item.name}}">
-    <a  href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+  <li class="nav-item" id="{{item.name}}">
+    <a href="{{ item.link }}" class="nav-link {% if page.url==item.link %} current{% endif %}">
       <span>{{ item.name | upcase}}</span>
     </a>
   </li>
