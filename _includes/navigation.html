@@ -1,11 +1,32 @@
+<div class="mini-navbar navbar ">
+  <ul>
+    <li class="nav-item" id="Email">  
+      <a href="" class="nav-link">
+      <span>EMAIL</span> 
+    </a>
+    </li>
+    <li class="nav-item" id="LinkedIn">  
+      <a href="" class="nav-link">
+      <span>LINKEDIN</span> 
+    </a>
+    </li>
+    <li class="nav-item" id="Youtube">  
+      <a href="" class="nav-link">
+      <span>YOUTUBE</span> 
+    </a>
+    </li>
+  </ul>
+</div>
+
+
 <nav class="navbar">
   <ul>
-  {% for item in site.data.navigation %}
-  <li class="nav-item" id="{{item.name}}">
-    <a href="{{ item.link }}" class="nav-link {% if page.url==item.link %} current{% endif %}">
-      <span>{{ item.name | upcase}}</span>
-    </a>
-  </li>
-  {% endfor %}
+    {% for item in site.data.navigation %}
+    <li class="nav-item" id="{{item.name}}">
+      <a href="{{ item.link }}" class="nav-link {% if page.url==item.link %} current{% endif %}">
+        <span>{{ item.name | upcase}}</span>
+      </a>
+    </li>
+    {% endfor %}
   </ul>
 </nav>

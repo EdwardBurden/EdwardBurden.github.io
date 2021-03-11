@@ -1,7 +1,6 @@
 .navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 50px 15px 50px 15px;
+    padding: 0px 15px 50px 15px;
     display: flex;
     justify-content: center;
     ul {
@@ -10,6 +9,23 @@
         padding: 0;
     }
 }
+
+.mini-navbar {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    .nav-link {
+        width: 50px;
+        height: 50px;
+        span {
+            font-size: 10px;
+            margin-left: 2px;
+        }
+    }
+}
+
 .nav-item {
     display: inline-block;
     border-radius: 5px;
@@ -55,4 +71,14 @@
 }
 #About {
     background-color: $mauve-taupe;
+}
+
+#Email {
+    background-color: $industrial-one
+}
+#LinkedIn {
+    background-color: $industrial-two;
+}
+#Youtube {
+    background-color: $industrial-three
 }
