@@ -36,11 +36,11 @@ body {
           top: 0px;
           left: 0px;
           font-size: 22px;
+          margin: 5px 5px 5px 5px;
           font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         }
         &:hover {
           opacity: 0.4;
-
         }
       }
     }
@@ -57,5 +57,4 @@ body {
       background-color: $mauve-taupe;
     }
   }
-
 }
