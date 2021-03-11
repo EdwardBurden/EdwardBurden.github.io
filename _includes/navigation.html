@@ -1,5 +1,19 @@
-<nav>
+<!--<nav>
   {% for item in site.data.navigation %}
     <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
+</nav>
+-->
+
+
+<nav id="palette-display">
+  <ul>
+  {% for item in site.data.navigation %}
+  <li id="{{item.name}}">
+    <a  href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+      <span>{{ item.name | upcase}}</span>
+    </a>
+  </li>
+  {% endfor %}
+  </ul>
 </nav>
