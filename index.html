@@ -3,4 +3,25 @@ title: Home
 layout: default
 ---
 
-<h1 style="color:red;">You are on home Page</h1>
+<div style="color:red;">Updates(Posts)</div>
+{% for post in site.posts %}
+<div class="home-card">
+<div class="home-card-header">
+<div>{{post.title}} </div>
+<div>{{post.project}} </div>
+</div>
+<a href="{{ post.url }}">{{ post.title }}</a>
+</div>
+{% endfor %}
+
+<div style="clear: left;"></div>
+
+<div style="color:blue;">Projects(Collection)</div>
+{% for post in site.projects %}
+<div class="home-card">
+<div class="home-card-header">
+<div>{{post.title}} </div>
+</div>
+<a href="{{ post.url }}">{{ post.title }}</a>
+</div>
+{% endfor %}

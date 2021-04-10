@@ -1,6 +1,24 @@
-
 body {
   background-color: $alabaster;
   position: relative;
 }
 
+.home-card {
+  background-color: rgb(145, 146, 151);
+  width: 300px;
+  max-height: 300px;
+  min-height: 200px;
+  float: left;
+  border: 1px black solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+}
+
+.home-card-header{
+  background-color: white;
+  width: 100%;
+  
+
+  
+}
