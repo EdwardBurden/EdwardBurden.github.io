@@ -6,22 +6,22 @@ layout: default
 <div style="color:red;">Updates(Posts)</div>
 {% for post in site.posts %}
 <div class="home-card">
-<div class="home-card-header">
-<div>{{post.title}} </div>
-<div>{{post.project}} </div>
-</div>
-<a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="home-card-header">
+        <div>{{post.title}} </div>
+        <div>{{post.project}} </div>
+    </div>
+    <a href="{{ post.url }}">{{ post.title }}</a>
 </div>
 {% endfor %}
 
 <div style="clear: left;"></div>
 
 <div style="color:blue;">Projects(Collection)</div>
-{% for post in site.projects %}
+{% for project in site.projects %}
 <div class="home-card">
-<div class="home-card-header">
-<div>{{post.title}} </div>
-</div>
-<a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="home-card-header">
+        <div>{{project.title}} </div>
+    </div>
+    <a href="{{ project.url }}">{{ project.title }}</a>
 </div>
 {% endfor %}

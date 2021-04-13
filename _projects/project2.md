@@ -1,7 +1,5 @@
 ---
 layout: project
-title: Project 1
+title: Project 2
 description: My first project
 ---
-
-Hide

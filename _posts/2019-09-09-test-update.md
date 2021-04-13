@@ -1,9 +1,11 @@
 ---
 layout: post
 author: Eddy b
-title : My Custom update 1
-project : Project1
+title : RTS game update 23
+project : Project 2
+category : Updates
 ---
+
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
 
