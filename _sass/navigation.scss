@@ -1,62 +1,36 @@
-.navbar {
-    list-style-type: none;
-    padding: 0px 15px 50px 15px;
-    display: flex;
-    justify-content: center;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.mini-navbar {
-    position:absolute;
-    top: 0px;
-    right: 0px;
-    margin: 0px;
+.sidebar {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: relative;
     padding: 0px;
-    .nav-link {
-        width: 50px;
+    border-right:  solid blue 5px;
+
+    @media only screen and (min-width: 400px) {
+        width: 160px;
+        height: 100%;
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    a {
+        border-radius: 5px 0px 0px 5px;
+        display: block;
+        margin-left: 10px;
         height: 50px;
-        span {
-            font-size: 10px;
-            margin-left: 2px;
+        padding-left: 5px;
+        i {
+            padding-top: 1px;
         }
     }
-}
-
-.nav-item {
-    display: inline-block;
-    border-radius: 5px;
-}
-.nav-link {
-    display: block;
-    color: $alabaster;
-    text-decoration: none;
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    span {
-        overflow: hidden;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        font-size: 20px;
-        margin: 5px 5px 5px 5px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        transition: top 0.2s;
-    }
-    &:hover span {
-        top: 10px;
-    }
-}
-
-.current {
-    span {
-        top: 10px;
+    .mini {
+        width: 80px;
+        margin-left: 90px;
     }
 }
 
@@ -74,11 +48,11 @@
 }
 
 #Email {
-    background-color: $industrial-one
+    background-color: $industrial-one;
 }
 #LinkedIn {
     background-color: $industrial-two;
 }
 #Youtube {
-    background-color: $industrial-three
+    background-color: $industrial-three;
 }

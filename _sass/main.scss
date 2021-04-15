@@ -1,6 +1,8 @@
 body {
   background-color: $alabaster;
-  position: relative;
+  @media only screen  and (min-width: 400px) {
+    margin-left: 160px; /* Same as the width of the sidenav */
+  }
 }
 
 .home-card {
@@ -15,10 +17,7 @@ body {
   overflow: auto;
 }
 
-.home-card-header{
+.home-card-header {
   background-color: white;
   width: 100%;
-  
-
-  
 }

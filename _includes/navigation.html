@@ -1,31 +1,12 @@
-<div class="mini-navbar navbar ">
-  <ul>
-    <li class="nav-item" id="Email">  
-      <a href="" class="nav-link">
-      <span>EMAIL</span> 
-    </a>
-    </li>
-    <li class="nav-item" id="LinkedIn">  
-      <a href="" class="nav-link">
-      <span>LINKEDIN</span> 
-    </a>
-    </li>
-    <li class="nav-item" id="Youtube">  
-      <a href="" class="nav-link">
-      <span>YOUTUBE</span> 
-    </a>
-    </li>
-  </ul>
-</div>
+<nav class="sidebar">
+  {% for item in site.data.navigation %}
+  <a id="{{item.name}}" href="{{ item.link }}" class="{% if page.url==item.link %}current{% endif %}">
+    <span>{{ item.name | upcase}}</span>
+  </a>
+  {% endfor %}
 
-<nav class="navbar">
-  <ul>
-    {% for item in site.data.navigation %}
-    <li class="nav-item" id="{{item.name}}">
-      <a href="{{ item.link }}" class="nav-link {% if page.url==item.link %} current{% endif %}">
-        <span>{{ item.name | upcase}}</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+
+  <a id="Email" href="" class="mini"> <i class="far fa-envelope fa-3x"></i></a>
+  <a id="LinkedIn" href=""> <i class="fab fa-linkedin"></i> </a>
+  <a id="Youtube" href=""><i class="fab fa-youtube"></i></a>
 </nav>
