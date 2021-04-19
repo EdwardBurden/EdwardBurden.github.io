@@ -11,8 +11,10 @@
 
 <body>
   {% include navigation.html %}
-  {% include breadcrumbs.html %}
-  {{ content }}
+  <div class="main">
+    {% include breadcrumbs.html %}
+    {{ content }}
+  </div>
 </body>
 
 </html>
