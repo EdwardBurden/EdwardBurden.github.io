@@ -11,8 +11,10 @@
 
 <body>
   {% include navigation.html %}
+  {%if page.url != "/"%}
+  {% include breadcrumbs.html %}
+  {%endif%}
   <div class="main">
-    {% include breadcrumbs.html %}
     {{ content }}
   </div>
 </body>

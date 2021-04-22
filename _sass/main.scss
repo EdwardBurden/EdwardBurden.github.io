@@ -8,11 +8,25 @@ body {
 }
 
 .main {
-  margin: 5px;
 }
 
+#breadcrumbs {
+  height: 20px;
+  background-color: $alabaster-light;
+}
+.splash {
+  
+  height: 100vh;
+  background-image: linear-gradient(rgba($industrial-one, 0.7), rgba($industrial-two, 0.3)), url("../images/back.jpg"); //todo add mobile version
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top, center;
+  
+}
+
+
 .home-card {
-  background-color: rgb(145, 146, 151);
+  background-color: $alabaster;
   width: 300px;
   max-height: 300px;
   min-height: 200px;
