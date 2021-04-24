@@ -4,13 +4,21 @@ layout: default
 permalink: /:basename/
 ---
 
-<h1 style="color:red;">You are on projects Page</h1>
+<div style="color:blue;">Projects(Collection)</div>
+<ul class="project-cards-container">
 
-<ul>
-  {% for post in site.projects %}
-  <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
+  {% for project in site.projects %}
+
+  <li class="project-card">
+    {{project.title}}
+    <div class="project-card-image-container">
+
+        <img class="project-card-image-container" src="../assets/images/background-splash.jpg" alt="Italian Trulli">
+      </div>
+
+    <a href="{{ project.url }}">{{ project.title }}</a>
   </li>
+
   {% endfor %}
+
 </ul>

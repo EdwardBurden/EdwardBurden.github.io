@@ -15,3 +15,14 @@ permalink: /:basename/
   </li>
   {% endfor %}
 </ul>
+
+<div style="color:red;">Updates(Posts)</div>
+{% for post in site.posts %}
+<div class="home-card">
+
+  {{post.title}}
+  {{post.project}}
+
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</div>
+{% endfor %}

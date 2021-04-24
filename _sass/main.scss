@@ -1,7 +1,7 @@
 body {
   background-color: $alabaster;
   margin: 0px;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 425px) {
     margin-top: 0px;
     margin-left: 160px; /* Same as the width of the sidenav */
   }
@@ -15,15 +15,50 @@ body {
   background-color: $alabaster-light;
 }
 .splash {
-  
   height: 100vh;
-  background-image: linear-gradient(rgba($industrial-one, 0.7), rgba($industrial-two, 0.3)), url("../images/background-splash.jpg"); //todo add mobile version
+  background-image: linear-gradient(rgba($industrial-one, 0.7), rgba($industrial-two, 0.3)),
+    url("../images/background-splash.jpg"); //todo add mobile version
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top, center;
-  
 }
 
+.project-cards-container {
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+  .project-card {
+    width: auto;
+    height: 200px;
+    border: 1px black solid;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    .project-card-image-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        position: relative;
+        min-height: 100%;
+        height: auto;
+        min-width: 100%;
+        width: auto;
+      }
+    }
+  }
+}
 
 .home-card {
   background-color: $alabaster;
