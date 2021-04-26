@@ -64,15 +64,11 @@
             margin: 0px;
             padding: 0px;
             text-decoration: none;
+            transition: padding 0.2s;
             @media only screen and (min-width: 425px) {
                 width: 80px;
                 margin: 5px 0px 5px 80px;
                 margin: none;
-            }
-            i {
-                margin-left: auto;
-                margin-right: auto;
-                text-decoration: none;
             }
         }
     }

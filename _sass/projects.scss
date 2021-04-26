@@ -3,17 +3,33 @@
     margin-left: 5px;
     margin-right: 5px;
     padding: 0px;
+    max-width: 1600px;
+    @media only screen and (min-width: 770px) {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 .project-card {
     width: auto;
     height: 200px;
-    border: 1px black solid;
     text-decoration: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 8px;
     position: relative;
+    box-shadow: 10px 10px 5px rgb(187, 187, 187);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    @media only screen and (min-width: 770px) {
+        height: 200px;
+        width: 300px;
+    }
+    @media only screen and (min-width: 1200px) {
+        height: 300px;
+        width: 500px;
+    }
 }
 .project-card-title-container {
     position: absolute;
@@ -25,21 +41,27 @@
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    background: rgba(0.5, 0.5, 0.5, 0.15);
+    background: rgba(0.5, 0.5, 0.5, 0.5);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+}
+
+.project-card-title-container {
     h3,
     a {
         color: white;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: auto;
     }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 770px) {
     .project-card:hover {
         .project-card-icons-container {
-            visibility: visible;
-            height: 50px;
+            display: grid;
+            height: 40px;
         }
     }
 }
@@ -47,14 +69,18 @@
 .project-card-icons-container {
     bottom: 0;
     position: absolute;
-    height: 50px;
-    @media only screen and (min-width: 425px) {
-        visibility: hidden;
+    height: 40px;
+    @media only screen and (min-width: 770px) {
+        display: none;
         height: 0px;
     }
-    width: 100%;
-    background: rgba(0.5, 0.5, 0.5, 0.15);
-    transition: visibility 0.05s, height 0.1s linear;
+    padding-left: 20%;
+    padding-right: 20%;
+    left: 0;
+    right: 0;
+    width: auto;
+    background: rgba(0.5, 0.5, 0.5, 0.5);
+    transition: display 0.05s, height 0.1s linear;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -66,11 +92,6 @@
         margin: 0px;
         padding: 0px;
         text-decoration: none;
-        i {
-            margin-left: auto;
-            text-decoration: none;
-            margin-right: auto;
-        }
     }
 }
 

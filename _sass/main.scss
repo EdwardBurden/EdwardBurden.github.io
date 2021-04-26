@@ -10,8 +10,21 @@ body {
 .main {
 }
 
-h2,h3 {
+h2,
+h3 {
   margin: 0;
+}
+
+a {
+  color: white;
+  &:hover i {
+    color: rgb(186, 186, 186);
+  }
+  i {
+    margin-left: auto;
+    text-decoration: none;
+    margin-right: auto;
+  }
 }
 
 #breadcrumbs {

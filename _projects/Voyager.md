@@ -1,7 +1,7 @@
 ---
 layout: project
-title: Plane mini-game
-priority: 3
-description: In this game you control a tojn of planes as they leave airports and must be guided to their destination, avoid them crossing paths or your career as an aircraft marshal will be over before it starts.
-thumbnail: splash1
+title: Voyager
+priority: 5
+description: A ship builder-sim game idea/prototype with full control of your ship to shoot, ram, outfit and manage your spaceship of your dreams the way you want.
+
 ---
