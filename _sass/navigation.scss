@@ -21,7 +21,7 @@
         }
     }
     a {
-        position:relative;
+        position: relative;
         display: block;
         text-decoration: none;
         height: 50px;
@@ -57,9 +57,13 @@
             display: inline-block;
         }
         .mini {
-            width: auto;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
             margin: 0px;
             padding: 0px;
+            text-decoration: none;
             @media only screen and (min-width: 425px) {
                 width: 80px;
                 margin: 5px 0px 5px 80px;
@@ -68,6 +72,7 @@
             i {
                 margin-left: auto;
                 margin-right: auto;
+                text-decoration: none;
             }
         }
     }

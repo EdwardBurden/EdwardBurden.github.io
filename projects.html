@@ -10,13 +10,18 @@ permalink: /:basename/
   {% for project in site.projects %}
 
   <li class="project-card">
-    {{project.title}}
+
     <div class="project-card-image-container">
-
-        <img class="project-card-image-container" src="../assets/images/background-splash.jpg" alt="Italian Trulli">
-      </div>
-
-    <a href="{{ project.url }}">{{ project.title }}</a>
+      <img class="project-card-image-container" src="../assets/images/{{project.thumbnail}}.jpg" alt="Italian Trulli">
+    </div>
+    <div class="project-card-title-container">
+      <h3 class="project-card-title">{{project.title}}</h3>
+      <a href="{{ project.url }}">Click for details...</a>
+    </div>
+    <div class="project-card-icons-container">
+      <a href="{{ project.github }}" class="mini"> <i class="fab fa-github fa-3x"></i></a>
+      <a href="{{ project.youtube }}" class="mini"> <i class="far fa-envelope fa-3x"></i></a>
+    </div>
   </li>
 
   {% endfor %}

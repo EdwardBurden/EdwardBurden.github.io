@@ -1,4 +1,10 @@
-<nav class="sidebar">
+<nav class="sidebar" id="sidebar">
+ <!-- 
+   <h2>Game Dev Ed</h2>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars fa-3x"></i>
+    </a>
+  -->
   {% for item in site.data.navigation %}
   <a id="{{item.name}}" href="{{ item.link }}" class="{% if page.url==item.link %}current{% endif %}">
     <span>{{ item.name | upcase}}</span>

@@ -2,6 +2,7 @@
 layout: project
 title: Knights
 priority: 1
-description: 
+description: Description here buddy
+thumbnail: splash3
 ---
 
