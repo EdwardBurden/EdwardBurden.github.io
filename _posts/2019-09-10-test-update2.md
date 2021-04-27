@@ -1,8 +1,8 @@
 ---
 layout: post
 author: Eddy b
-title : Mario game update
-project : Project 2
+title : My Custom update
+project : Crit Happens
 category : Updates
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds

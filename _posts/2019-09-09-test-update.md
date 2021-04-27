@@ -2,7 +2,7 @@
 layout: post
 author: Eddy b
 title : RTS game update 23
-project : Project 2
+project : Crit Happens
 category : Updates
 ---
 

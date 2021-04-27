@@ -6,22 +6,28 @@ permalink: /:basename/
 
 <div style="color:blue;">Projects(Collection)</div>
 <ul class="project-cards-container">
-
+  {%assign filteredPosts = site.posts | sort:"date" | reverse%}
   {% for project in site.projects %}
 
   <li class="project-card">
-  
-      <div class="project-card-image-container">
-        <img class="project-card-image-container" src="../assets/images/{{project.thumbnail}}" alt="Italian Trulli">
-      </div>
-      <div class="project-card-title-container">
-        <h3 class="project-card-title">{{project.title}}</h3>
-        <a href="{{ project.url }}">Click for details...</a>
-      </div>
-      <div class="project-card-icons-container">
-        <a target="_blank" href="{{ project.github }}" class="mini"> <i class="fab fa-github fa-2x"></i></a>
-        <a target="_blank" href="{{ project.youtube }}" class="mini"> <i class="fab fa-youtube fa-2x"></i></a>
-      </div>
+    <div class="project-card-image-container">
+      <a href="{{ project.url }}">
+        <img src="../assets/images/{{project.thumbnail}}" alt="Italian Trulli">
+      </a>
+    </div>
+    <div class="project-card-title-container">
+      <h3 class="project-card-title">{{project.title}}</h3>
+
+      {% assign filtered = filteredPosts | where: "project", project.title | first %}
+      {% if filtered != null %}
+      <a href="{{ filtered.url }}">View Latest Update</a>
+      {%endif%}
+
+    </div>
+    <div class="project-card-icons-container">
+      <a target="_blank" href="{{ project.github }}" class="mini"> <i class="fab fa-github fa-2x"></i></a>
+      <a target="_blank" href="{{ project.youtube }}" class="mini"> <i class="fab fa-youtube fa-2x"></i></a>
+    </div>
   </li>
 
   {% endfor %}
