@@ -104,7 +104,6 @@
     z-index: 0;
     overflow: hidden;
 
-
     a {
         position: relative;
         width: 100%;
@@ -113,10 +112,13 @@
         align-items: center;
         justify-content: center;
         img {
-            min-height: 100%;
-            height: auto;
+            transition: min-width 0.1s linear;
             min-width: 100%;
             width: auto;
+        }
+        &:hover img {
+            min-width: 105%;
+
         }
     }
 }

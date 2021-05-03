@@ -4,7 +4,6 @@ layout: default
 permalink: /:basename/
 ---
 
-<div style="color:blue;">Projects(Collection)</div>
 <ul class="project-cards-container">
   {%assign filteredPosts = site.posts | sort:"date" | reverse%}
   {% for project in site.projects %}
@@ -12,7 +11,7 @@ permalink: /:basename/
   <li class="project-card">
     <div class="project-card-image-container">
       <a href="{{ project.url }}">
-        <img src="../assets/images/{{project.thumbnail}}" alt="Italian Trulli">
+        <img src="../assets/images/{{project.thumbnail}}" alt="Project Thumbnail">
       </a>
     </div>
     <div class="project-card-title-container">

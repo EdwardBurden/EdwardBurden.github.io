@@ -5,24 +5,35 @@ permalink: /:basename/
 ---
 
 
-<h1 style="color:red;">You are on updates Page</h1>
 
-<ul>
+<ul class="cards-container">
   {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
+  {%assign project = site.projects | where: "title", post.project %}
+
+
+  <li class="updates-card">
+    <div class="updates-card-inner">
+      <div class="updates-card-text-holder">
+
+        <a class="updates-card-header" href="{{ post.url }}">
+          <h3>{{ post.title }}</h3>
+        </a>
+        <p class="updates-card-excerpt"> {{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+        <a href="{{ project[0].url }}">{{ project[0].title }}</a>
+
+      </div>
+      <div class="updates-card-image-holder">
+        <a href="{{ post.url }}">
+          <img class="updates-card-image" src="../assets/images/{{post.thumbnail}}" alt="Post Thumbnail">
+        </a>
+      
+      </div>
+    </div>
+    <div class="updates-card-links-holder">
+      <a target="_blank" href="{{ project.github }}" class="mini"> <i class="fab fa-github fa-1x"></i></a>
+      <a target="_blank" href="{{ project.youtube }}" class="mini"> <i class="fab fa-youtube fa-1x"></i></a>
+    </div>
   </li>
   {% endfor %}
+
 </ul>
-
-<div style="color:red;">Updates(Posts)</div>
-{% for post in site.posts %}
-<div class="home-card">
-
-  {{post.title}}
-  {{post.project}}
-
-  <a href="{{ post.url }}">{{ post.title }}</a>
-</div>
-{% endfor %}

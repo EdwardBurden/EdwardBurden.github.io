@@ -4,6 +4,7 @@ author: Eddy b
 title : Mario game update
 project : Crit Happens
 category : Updates
+thumbnail: splash1.jpg
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
