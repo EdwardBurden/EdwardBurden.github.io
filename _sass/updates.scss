@@ -1,13 +1,16 @@
 .updates-card {
     list-style-type: none;
-    display: block;
+    display: inline-block;
     max-width: 500px;
     margin: 16px 8px 16px 8px;
     overflow: hidden;
-    background-color: $industrial-three;
-    a {
+    a,
+    p {
         color: white;
         text-decoration: none;
+    }
+    a:hover {
+        color: #bababa;
     }
 }
 .updates-card-inner {
@@ -21,6 +24,10 @@
 }
 .updates-card-header {
 }
+.updates-card-text-inner {
+    margin-left: 5px;
+}
+
 .updates-card-excerpt {
     max-height: 40px;
     overflow: hidden;

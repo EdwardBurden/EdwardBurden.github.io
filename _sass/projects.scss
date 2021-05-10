@@ -2,6 +2,7 @@
     list-style-type: none;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 0px;
     padding: 0px;
     max-width: 1600px;
     @media only screen and (min-width: 770px) {
@@ -19,7 +20,7 @@
     text-decoration: none;
     margin: 8px;
     position: relative;
-    box-shadow: 10px 10px 5px rgb(187, 187, 187);
+    box-shadow: 10px 10px 5px #b7a097;
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
     @media only screen and (min-width: 770px) {

@@ -4,7 +4,7 @@ layout: default
 permalink: /:basename/
 ---
 
-
+<div class=page-background id="Updates"></div>
 
 <ul class="cards-container">
   {% for post in site.posts %}
@@ -18,15 +18,16 @@ permalink: /:basename/
         <a class="updates-card-header" href="{{ post.url }}">
           <h3>{{ post.title }}</h3>
         </a>
-        <p class="updates-card-excerpt"> {{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-        <a href="{{ project[0].url }}">{{ project[0].title }}</a>
-
+        <div class="updates-card-text-inner">
+          <p class="updates-card-excerpt"> {{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          <a href="{{ project[0].url }}">{{ project[0].title }}</a>
+        </div>
       </div>
       <div class="updates-card-image-holder">
         <a href="{{ post.url }}">
           <img class="updates-card-image" src="../assets/images/{{post.thumbnail}}" alt="Post Thumbnail">
         </a>
-      
+
       </div>
     </div>
     <div class="updates-card-links-holder">

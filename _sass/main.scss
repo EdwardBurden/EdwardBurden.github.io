@@ -57,10 +57,20 @@ h3 {
   width: 100%;
 }
 
-
 .cards-container {
+  margin-top: 0px;
   list-style-type: none;
   margin-left: 5px;
   margin-right: 5px;
   padding: 0px;
+}
+
+.page-background {
+  position: fixed;
+  padding-top: -20px;
+  width: 100%;
+  min-height: 100vh;
+  top: 0px;
+
+  z-index: -1;
 }
