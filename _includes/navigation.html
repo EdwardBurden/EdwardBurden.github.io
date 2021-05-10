@@ -1,19 +1,26 @@
 <nav class="sidebar" id="sidebar">
- <!-- 
-   <h2>Game Dev Ed</h2>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars fa-3x"></i>
+  <div class="logo-holder" id="LinkedIn">
+    <a id="logo" href="/" class="">
+      <span>GAME DEV ED</span>
     </a>
-  -->
-  {% for item in site.data.navigation %}
-  <a id="{{item.name}}" href="{{ item.link }}" class="{% if page.url==item.link %}current{% endif %}">
-    <span>{{ item.name | upcase}}</span>
-  </a>
-  {% endfor %}
+    <a href="javascript:void(0);" id="hamburger" class="mini icon" onclick="myFunction()">
+      <i class="fa fa-bars fa-3x"></i>
+    </a>
+  </div>
+  <div id="myLinks" class="mystyle">
 
-  <div class="mini-wrapper">
-    <a id="Email" href="" class="mini"> <i class="far fa-envelope fa-3x"></i></a>
-    <a id="LinkedIn" href="" class="mini"> <i class="fab fa-linkedin fa-3x"></i> </a>
-    <a id="Youtube" href="" class="mini"><i class="fab fa-youtube fa-3x"></i></a>
+
+
+    {% for item in site.data.navigation %}
+    <a id="{{item.name}}" href="{{ item.link }}" class="{% if page.url==item.link %}current{% endif %}">
+      <span>{{ item.name | upcase}}</span>
+    </a>
+    {% endfor %}
+
+    <div class="mini-wrapper">
+      <a id="Email" href="" class="mini"> <i class="far fa-envelope fa-3x"></i></a>
+      <a id="LinkedIn" href="" class="mini"> <i class="fab fa-linkedin fa-3x"></i> </a>
+      <a id="Youtube" href="" class="mini"><i class="fab fa-youtube fa-3x"></i></a>
+    </div>
   </div>
 </nav>
