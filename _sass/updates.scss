@@ -13,6 +13,12 @@
         color: #bababa;
     }
 }
+
+.updates-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .updates-card-inner {
     display: flex;
     align-items: center;
