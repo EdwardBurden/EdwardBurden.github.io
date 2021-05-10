@@ -2,8 +2,9 @@
 layout: post
 author: Eddy b
 title : RTS game update 23
-project : Crit Happens
+project : F.U.B.A.R
 category : Updates
+thumbnail: splash1.jpg
 ---
 
 A banana is an edible fruit – botanically a berry – produced by several kinds
