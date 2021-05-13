@@ -31,8 +31,12 @@ permalink: /:basename/
       </div>
     </div>
     <div class="updates-card-links-holder">
-      <a target="_blank" href="{{ project.github }}" class="mini"> <i class="fab fa-github fa-1x"></i></a>
-      <a target="_blank" href="{{ project.youtube }}" class="mini"> <i class="fab fa-youtube fa-1x"></i></a>
+      {%if project[0].github != null%}
+      <a target="_blank" href="{{ project[0].github }}" class="mini"> <i class="fab fa-github fa-1x"></i></a>
+      {%endif%}
+      {%if post.youtube != null%}
+      <a target="_blank" href="{{ post.youtube }}" class="mini"> <i class="fab fa-youtube fa-1x"></i></a>
+      {%endif%}
     </div>
   </li>
   {% endfor %}
