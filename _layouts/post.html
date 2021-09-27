@@ -9,4 +9,6 @@ layout: default
 
 {{ content }}
 
-
+{% if page.unity_dir %}
+   {% include unityPlayer.html %}
+{% endif %}
