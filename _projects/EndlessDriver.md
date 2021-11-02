@@ -1,8 +1,8 @@
 ---
 layout: project
-priority: 30
-title: Crit Happens
-description: CRPG with turn based group combat insired by Divinity and Baldur's Gate.
+priority: 20
+title: Endless Driver
+description: Relaxing endless runner style game , steer the car down the road avoiding cars and obstacles
 status: Unfinished
 
 thumbnail: splash1.jpg

@@ -7,7 +7,8 @@ permalink: /:basename/
 <div class=page-background id="Updates"></div>
 
 <ul class="cards-container  updates-card-container">
-  {% for post in site.posts %}
+  {%assign sortedPosts = site.posts | sort: "date" | reverse %}
+  {% for post in sortedPosts %}
   {%assign project = site.projects | where: "title", post.project %}
 
 
@@ -19,6 +20,7 @@ permalink: /:basename/
           <h3>{{ post.title }}</h3>
         </a>
         <div class="updates-card-text-inner">
+       <p class="updates-card-excerpt">  {{ post.date | date: '%d %B, %Y' }}</p> 
           <p class="updates-card-excerpt"> {{ post.excerpt | strip_html | truncatewords: 50 }}</p>
           <a href="{{ project[0].url }}">{{ project[0].title }}</a>
         </div>

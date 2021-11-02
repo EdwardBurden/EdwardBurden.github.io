@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Eddy b
-title : My Custom update
+title : Third Crit Happens Update
 project : Crit Happens
 category : Updates
 thumbnail: splash1.jpg

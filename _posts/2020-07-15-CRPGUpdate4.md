@@ -1,12 +1,10 @@
 ---
 layout: post
 author: Eddy b
-title : Mario game update
+title : Fourth Crit Happens Update
 project : Crit Happens
 category : Updates
 thumbnail: splash1.jpg
-youtube: linkHere
-unity_dir: KnightsBuild1
 ---
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.

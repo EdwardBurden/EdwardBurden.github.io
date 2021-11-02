@@ -7,7 +7,8 @@ permalink: /:basename/
 
 <ul class="project-cards-container">
   {%assign filteredPosts = site.posts | sort:"date" | reverse%}
-  {% for project in site.projects %}
+  {%assign sortedProjects = site.projects |  sort:"priority"%}
+  {% for project in sortedProjects %}
 
   <li class="project-card">
     <div class="project-card-image-container">
