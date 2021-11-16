@@ -4,43 +4,17 @@ layout: default
 permalink: /:basename/
 ---
 
-<div class=page-background id="Updates"></div>
 
-<ul class="cards-container  updates-card-container">
-  {%assign sortedPosts = site.posts | sort: "date" | reverse %}
-  {% for post in sortedPosts %}
-  {%assign project = site.projects | where: "title", post.project %}
+<div id="updates-list" class="col-sm-12">
+  <h3>Updates</h3>
 
-
-  <li class="updates-card">
-    <div class="updates-card-inner">
-      <div class="updates-card-text-holder">
-
-        <a class="updates-card-header" href="{{ post.url }}">
-          <h3>{{ post.title }}</h3>
-        </a>
-        <div class="updates-card-text-inner">
-       <p class="updates-card-excerpt">  {{ post.date | date: '%d %B, %Y' }}</p> 
-          <p class="updates-card-excerpt"> {{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          <a href="{{ project[0].url }}">{{ project[0].title }}</a>
-        </div>
-      </div>
-      <div class="updates-card-image-holder">
-        <a href="{{ post.url }}">
-          <img class="updates-card-image" src="../assets/images/{{post.thumbnail}}" alt="Post Thumbnail">
-        </a>
-
-      </div>
+  <div class="row">
+    {%assign sortedPosts = site.posts | sort: "date" | reverse %}
+    {% for post in sortedPosts %}
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      {% include updatesCard.html content = post%}
     </div>
-    <div class="updates-card-links-holder">
-      {%if project[0].github != null%}
-      <a target="_blank" href="{{ project[0].github }}" class="mini"> <i class="fab fa-github fa-1x"></i></a>
-      {%endif%}
-      {%if post.youtube != null%}
-      <a target="_blank" href="{{ post.youtube }}" class="mini"> <i class="fab fa-youtube fa-1x"></i></a>
-      {%endif%}
-    </div>
-  </li>
-  {% endfor %}
+    {%endfor%}
+  </div>
+</div>
 
-</ul>

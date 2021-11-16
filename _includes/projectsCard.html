@@ -1,13 +1,24 @@
-
-    <div class="card mb-3 box-shadow">
+<div class="card mb-3 box-shadow">
+    <a href="{{ project.url }}">
         <img class="card-img-top" src="../assets/images/{{include.content.thumbnail}}" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">{{include.content.title}}</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content.
-                This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
+    </a>
+    <div class="card-body">
+        <h5 class="card-title">{{include.content.title}}</h5>
+        <p class="card-text"> {{include.content.excerpt }}</p>
+
+
+        {%if include.content.github%}
+        <a class="card-link" href="{{ include.content.github }}">GitHub</a>
+        {%endif%}
+        {%if include.content.youtube%}
+        <a class="card-link" href="{{ include.content.youtube }}">Youtube</a>
+        {%endif%}
+        {%assign lastPost = site.posts | where: "project", include.content.title | sort:"date" | reverse | first %}
+     
+    </div> 
+      {%if lastPost%}
+    <div class="card-footer">
+        <small class="text-muted">Last Update {{lastPost.date | date: "%d %B, %Y"}}</small>
     </div>
+    {%endif%}
+</div>
