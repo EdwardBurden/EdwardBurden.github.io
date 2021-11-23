@@ -4,6 +4,12 @@
     </a>
     <div class="card-body">
         <h5 class="card-title">{{include.content.title}}</h5>
+        <h6 class="card-subtitle badge 
+        {%if include.content.status=="Active"%}
+            badge-primary 
+        {%elsif  include.content.status=="Closed"%} 
+            badge-secondary
+            {%endif%} ">{{include.content.status }}</h6>
         <p class="card-text"> {{include.content.excerpt }}</p>
 
 

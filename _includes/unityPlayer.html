@@ -1,8 +1,10 @@
-<script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/TemplateData/UnityProgress.js"></script>  
+<script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/TemplateData/UnityProgress.js"></script>
 <script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/UnityLoader.js"></script>
 <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl}}/assets/unity/{{page.unity_dir}}/Build/test.json",{onProgress: UnityProgress});  
+  var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl}}/assets/unity/{{page.unity_dir}}/Build/test.json", { onProgress: UnityProgress });
 </script>
-<div class="webgl-content">
-  <div id="gameContainer" style="width: 960px; height: 600px"></div>
+<div class="col-sm-12 mt-5 mb-5">
+  <div class="webgl-content">
+    <div id="gameContainer" style="width: auto; height: calc(width * 0.61804697157); margin-bottom:20px"></div>
+  </div>
 </div>

@@ -4,17 +4,17 @@ layout: default
 permalink: /:basename/
 ---
 
+<div class="container">
+  <div id="updates-list" class="col-sm-12">
+    <h3>Updates</h3>
 
-<div id="updates-list" class="col-sm-12">
-  <h3>Updates</h3>
-
-  <div class="row">
-    {%assign sortedPosts = site.posts | sort: "date" | reverse %}
-    {% for post in sortedPosts %}
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      {% include updatesCard.html content = post%}
+    <div class="row">
+      {%assign sortedPosts = site.posts | sort: "date" | reverse %}
+      {% for post in sortedPosts %}
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        {% include updatesCard.html content = post%}
+      </div>
+      {%endfor%}
     </div>
-    {%endfor%}
   </div>
 </div>
-

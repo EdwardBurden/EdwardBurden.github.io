@@ -15,11 +15,11 @@ layout: default
   <div class="row">
 
     <div id="updates-list" class="col-sm-12 col-md-12 col-lg-6">
-      <h3>Featured Updates</h3>
-      <a href="/updates/" style="color:red;">View All here</a>
+      <h3>Recent Updates</h3>
+      <a href="/updates/">View All here</a>
       <div class="row">
         {%assign sortedPosts = site.posts | sort: "date" | reverse %}
-        {% for post in sortedPosts limit : 6%}
+        {% for post in sortedPosts limit : 3%}
         <div class="col-sm-12">
           {% include updatesCard.html content = post%}
         </div>
@@ -28,8 +28,8 @@ layout: default
     </div>
 
     <div id="projects-list" class="col-sm-12 col-md-12 col-lg-6">
-      <h3>Featured Projects</h3>
-      <a href="/projects/" style="color:red;">View All here</a>
+      <h3>Recent Projects</h3>
+      <a href="/projects/">View All here</a>
       <div class="row">
         {%assign sortedProjects = site.projects | sort:"priority" %}
         {% for project in sortedProjects limit : 3 %}

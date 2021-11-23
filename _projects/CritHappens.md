@@ -3,7 +3,7 @@ layout: project
 priority: 30
 title: Crit Happens
 description: CRPG with turn based group combat insired by Divinity and Baldur's Gate.
-status: Unfinished
+status: Closed
 
 thumbnail: splash1.jpg
 github: https://github.com/EdwardBurden/LMARPG-Git

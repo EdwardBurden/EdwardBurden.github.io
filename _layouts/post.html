@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-{%assign project = site.projects | where: "title", page.project %}
-<a href="{{ project[0].url }}">{{ project[0].title }}</a>
+<div class="container">
+   <h1>{{ page.title }}</h1>
+   <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+   {%assign project = site.projects | where: "title", page.project %}
+   <a href="{{ project[0].url }}">{{ project[0].title }}</a>
 
 
-{{ content }}
+   {{ content }}
 
-{% if page.unity_dir %}
+   {% if page.unity_dir %}
    {% include unityPlayer.html %}
-{% endif %}
+   {% endif %}
+</div>

@@ -3,7 +3,7 @@ layout: project
 priority: 20
 title: Endless Driver
 description: Relaxing endless runner style game , steer the car down the road avoiding cars and obstacles
-status: Unfinished
+status: Closed
 
 thumbnail: splash1.jpg
 github: https://github.com/EdwardBurden/LMARPG-Git
