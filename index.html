@@ -14,26 +14,26 @@ layout: default
 <div class="container">
   <div class="row">
 
-    <div id="updates-list" class="col-sm-12 col-md-12 col-lg-6">
+    <div id="updates-list" class="col-sm-12 col-md-12 col-lg-12">
       <h3>Recent Updates</h3>
       <a href="/updates/">View All here</a>
       <div class="row">
         {%assign sortedPosts = site.posts | sort: "date" | reverse %}
         {% for post in sortedPosts limit : 3%}
-        <div class="col-sm-12">
+        <div class="col-sm-4">
           {% include updatesCard.html content = post%}
         </div>
         {%endfor%}
       </div>
     </div>
 
-    <div id="projects-list" class="col-sm-12 col-md-12 col-lg-6">
+    <div id="projects-list" class="col-sm-12 col-md-12 col-lg-12">
       <h3>Recent Projects</h3>
       <a href="/projects/">View All here</a>
       <div class="row">
         {%assign sortedProjects = site.projects | sort:"priority" %}
-        {% for project in sortedProjects limit : 3 %}
-        <div class="col-sm-12">
+        {% for project in sortedProjects limit : 4 %}
+        <div class="col-sm-6">
           {% include projectsCard.html content= project%}
         </div>
         {%endfor%}

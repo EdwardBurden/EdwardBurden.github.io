@@ -9,7 +9,7 @@ permalink: /:basename/
   <div class="row">
     {%assign sortedProjects = site.projects | sort:"priority" %}
     {% for project in sortedProjects %}
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-6">
       {% include projectsCard.html content= project%}
     </div>
     {%endfor%}
