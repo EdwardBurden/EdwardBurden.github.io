@@ -13,7 +13,7 @@ excerpt: After the donut tutorial i tried out the cupcake exercise.
 </div>
 
 <div class="row mb-5">
-  <img class="col-md-8 col-12" src="/assets/images/Blenders/Muffin wireframe.png" alt="">
+  <img class="col-md-8 col-12" src="/assets/images/Blenders/MuffinWireframe.png" alt="">
   <p class="col-md-4 col-12">Something explaing the image</p>
 </div>
 
