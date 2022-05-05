@@ -1,6 +1,6 @@
 ---
 layout: project
-priority: 20
+priority: 100
 title: Endless Driver
 description: Relaxing endless runner style game , steer the car down the road avoiding cars and obstacles
 status: Closed
