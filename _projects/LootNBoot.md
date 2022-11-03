@@ -4,14 +4,12 @@ priority: 10
 title: Loot & Boot
 description: Pixel art based dungeon crawler game idea/prototype
 status: Closed
-
 thumbnail: Loot1.PNG
-unity_dir: KnightsBuild1
 ---
 
 I was playing Hades and getting excited for the next Diablo release so I thought I would have a little look online to learn about generating dungeons and thought I might as well have a go implementing in Unity.
 
-I used this article from <a href="https://www.gamedeveloper.com/programming/procedural-dungeon-generation-algorithm">gamasutra</a> (which rebranded while i made this post)
+I used this article from <a href="https://www.gamedeveloper.com/programming/procedural-dungeon-generation-algorithm">gamasutra</a> (which rebranded i guess)
 And had some fun replicating part of it but also had some problems applying it to an isometric game.
 I started getting some ideas for a fun pixel art style game about exploring an underground flooded city in a cyberpunk future. Only problem was that I had no art experience and I soon realized the project would be very art intensive so I decided to stop working on it.
 

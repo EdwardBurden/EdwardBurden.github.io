@@ -4,8 +4,9 @@ layout: default
 <div class="container">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description}}</p>
-
+    {%assign filteredPosts = site.posts | where: "project", page.title %}
     {{ content }}
+    {%if filteredPosts.size >0   %}
     <h5>Updates</h5>
     <ul class="list-group mb-5">
         {%assign filteredPosts = site.posts | where: "project", page.title %}
@@ -13,4 +14,5 @@ layout: default
         <li class="list-group-item"> <a href="{{post.url }}">{{ post.title }}</a></li>
         {%endfor%}
     </ul>
+    {% endif %}
 </div>
