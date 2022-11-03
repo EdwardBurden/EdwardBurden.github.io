@@ -5,7 +5,7 @@ title: Loot & Boot
 description: Pixel art based dungeon crawler game idea/prototype
 status: Closed
 
-thumbnail: loot1.PNG
+thumbnail: Loot1.PNG
 unity_dir: KnightsBuild1
 ---
 
@@ -20,8 +20,8 @@ If you go to the annoucement update for the game you can walk around a dungeon b
 I also had a big problem wil walls and doors so that why they look so weird in the pics below.
 
 <div class="row mb-5">
- <img class="col-6" src="/assets/images/loot2.png" alt="">
-    <img class="col-6" src="/assets/images/loot3.png" alt="">
+ <img class="col-6" src="/assets/images/loot2.PNG" alt="">
+    <img class="col-6" src="/assets/images/loot3.PNG" alt="">
 </div>
 
 //TODO EXPLAIN  THE DUNGEON MAKING
