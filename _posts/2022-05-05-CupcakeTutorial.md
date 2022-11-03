@@ -4,7 +4,7 @@ author: Edward Burden
 title : Cupcake Exercise
 project : Blender Renders
 category : Updates
-thumbnail: Blenders\MuffinThumbnail.jpg
+thumbnail: Blenders\MuffinThumbnailHorizontal.jpg
 
 excerpt: After the donut tutorial i tried out the cupcake exercise.
 ---

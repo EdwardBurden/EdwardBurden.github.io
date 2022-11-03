@@ -13,13 +13,13 @@ layout: default
 <div class="container">
   <div class="row">
 
-    <div id="updates-list" class="col-sm-12 col-md-12 col-lg-12">
+    <div id="updates-list" class="col-sm-12 col-md-12 col-lg-12 ">
       <h3>Recent Updates</h3>
       <a href="/updates/">View All here</a>
       <div class="row">
         {%assign sortedPosts = site.posts | sort: "date" | reverse %}
         {% for post in sortedPosts limit : 3%}
-        <div class="col-sm-4">
+        <div class="col-sm-4  d-flex align-items-stretch">
           {% include updatesCard.html content = post%}
         </div>
         {%endfor%}
@@ -32,7 +32,7 @@ layout: default
       <div class="row">
         {%assign sortedProjects = site.projects | sort:"priority" %}
         {% for project in sortedProjects limit : 4 %}
-        <div class="col-sm-6">
+        <div class="col-sm-6  d-flex align-items-stretch">
           {% include projectsCard.html content= project%}
         </div>
         {%endfor%}
