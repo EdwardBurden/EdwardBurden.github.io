@@ -4,7 +4,7 @@ author: Eddy b
 title : Loot & Boot Announcement
 project : Loot & Boot
 category : Updates
-thumbnail: loot1.PNG
+thumbnail: Loot1.PNG
 youtube: https://youtu.be/6bjCG9yr8ng
 unity_dir: KnightsBuild1
 ---

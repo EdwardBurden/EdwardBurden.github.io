@@ -9,7 +9,7 @@ thumbnail: Blenders\Anvil.PNG
 excerpt: This one didnt go so well...
 ---
 <div class="row justify-content-left mb-5">
-  <img class="col-6" src="/assets/images/Blenders/Anvil.png" alt="">
+  <img class="col-6" src="/assets/images/Blenders/Anvil.PNG" alt="">
    <div class="col-6">
  <p> Here's one I want to go back and redo from the start. It doesn't look too bad when viewed in blender but I had run into too many problems when trying to sculpt the anvil at the end and then had even more problems getting the texturing to work too.
 </p>
