@@ -9,10 +9,9 @@ youtube: https://www.youtube.com/watch?v=RQshDJXe7As&ab_channel=EdwardBurden
 
 excerpt: Following the excellent tutorial series by Blender Guru i was able to get this great rendered animation.
 ---
-
-<p>Here's a rendered image from the animation, i like this frame because i think it captures well the light from above hitting the top ring of the donut and shows the difference in textures between the icing and donut very well.</p>
 <div class="row justify-content-center mb-5">
   <img class="col-8" src="/assets/images/Blenders/DonutHorizontal.png" alt="">
+  <p class="col-4">Here's a rendered image from the animation, i like this frame because i think it captures well the light from above hitting the top ring of the donut and shows the difference in textures between the icing and donut very well.</p>
 </div>
 <p>Here is the final result, watchable on youtube.</p>
 <div class="embed-responsive embed-responsive-16by9 mb-5">
