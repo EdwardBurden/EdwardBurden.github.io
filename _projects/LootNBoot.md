@@ -22,8 +22,9 @@ I also had a big problem wil walls and doors so that why they look so weird in t
     <img class="col-6" src="/assets/images/loot3.PNG" alt="">
 </div>
 
-//TODO EXPLAIN  THE DUNGEON MAKING
-
+The difficult part of making it work was using Delaunay triangulation to create a graph of the dungeon room and then making a minimum spanning tree for connections between the rooms which then became corridors.
+  
+I started then using the Unity rule tile package to make the walls work but realised there would need to be lots of wall variations because of the proximity of the rooms and possible tile combinations.
 <div class="embed-responsive embed-responsive-16by9 mb-5">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6bjCG9yr8ng" allowfullscreen></iframe>
 </div>

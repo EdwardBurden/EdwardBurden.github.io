@@ -1,6 +1,6 @@
 ---
 layout: project
-priority: 30
+priority: 100
 title: Crit Happens
 description: CRPG with turn based group combat insired by Divinity and Baldur's Gate.
 status: Closed
