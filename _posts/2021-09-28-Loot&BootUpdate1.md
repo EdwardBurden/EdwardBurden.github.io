@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Eddy b
+author: Edward Burden
 title : Loot & Boot Announcement
 project : Loot & Boot
 category : Updates

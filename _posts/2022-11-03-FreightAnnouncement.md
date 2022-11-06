@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Eddy b
+author: Edward Burden
 title : Freight Announcement
 project : Freight
 category : Updates
