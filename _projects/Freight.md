@@ -1,11 +1,12 @@
 ---
 layout: project
-priority: -1
+priority: 2
 title: Freight
 description: New resource trading game i've been working on and finally starting to show.
-status: Active
+status: Closed
 
 thumbnail: freight1.PNG
+github: https://github.com/EdwardBurden/Freight
 ---
 
 Freight is a resource management and logistics game set in a sci-fi future where the player manages a space trading company. Your objective is make money and become a profitable and expansive business. You do this by buying and selling resources from settlements scattered across an alien planet however you must deliver every resource yourself. To meet this challenge you can build a fleet of ships which transport Freight across your empire.You’ll face challenges managing the cost of operating this fleet and must optimize your business to survive.  

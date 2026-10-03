@@ -38,3 +38,26 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+.card-img-top {
+    width: 100%;
+    height: 250px; /* pick the height you want */
+    object-fit: cover; /* fill the box, crop the excess, no stretching */
+    object-position: center; /* keep the crop centered */
+}
+
+.card-img {
+    width: 100%;
+    height: 200px; /* pick the height you want */
+    object-fit: cover; /* fill the box, crop the excess, no stretching */
+    object-position: center; /* keep the crop centered */
+}
+
+.card-link {
+    color: #6c757d;
+}
+
+.card-link:hover {
+    color: #212529;
+    text-decoration: none;
+}

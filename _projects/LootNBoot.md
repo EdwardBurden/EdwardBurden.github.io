@@ -1,6 +1,6 @@
 ---
 layout: project
-priority: 10
+priority: 1
 title: Loot & Boot
 description: Pixel art based dungeon crawler game idea/prototype
 status: Closed

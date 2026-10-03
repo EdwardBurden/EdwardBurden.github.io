@@ -7,7 +7,7 @@ permalink: /:basename/
 <div id="projects-list" class="col-sm-12">
   <h3>Projects</h3>
   <div class="row">
-    {%assign sortedProjects = site.projects | sort:"priority" %}
+    {%assign sortedProjects = site.projects | sort:"priority" | reverse %}
     {% for project in sortedProjects %}
     <div class="col-sm-12 col-md-6 col-lg-6  d-flex align-items-stretch">
       {% include projectsCard.html content= project%}

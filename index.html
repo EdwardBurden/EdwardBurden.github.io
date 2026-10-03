@@ -30,7 +30,7 @@ layout: default
       <h3>Recent Projects</h3>
       <a href="/projects/">View All here</a>
       <div class="row">
-        {%assign sortedProjects = site.projects | sort:"priority" %}
+        {%assign sortedProjects = site.projects | sort:"priority" | reverse %}
         {% for project in sortedProjects limit : 4 %}
         <div class="col-sm-6  d-flex align-items-stretch">
           {% include projectsCard.html content= project%}

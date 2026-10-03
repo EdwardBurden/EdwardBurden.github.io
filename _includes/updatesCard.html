@@ -1,4 +1,4 @@
-<div class="card   mb-3 box-shadow">
+<div class="card mb-3 box-shadow w-100">
     <a href="{{ include.content.url }}">
         <img class="card-img" src="../assets/images/{{include.content.thumbnail}}" alt="Card image cap">
     </a>
@@ -7,14 +7,16 @@
         <h5 class="card-title">{{include.content.title}}</h5>
         <p class="card-text"> {{include.content.excerpt }}</p>
 
-        {%assign project = site.projects | where: "title", post.project | first %}
-        {%if project.github%}
-        <a class="card-link" href="{{ project.github}}">GitHub</a>
-        {%endif%}
-        {%if include.content.youtube%}
-        <a class="card-link" href="{{ include.content.youtube }}">Youtube</a>
-        {%endif%}
-        {%assign lastPost = site.posts | where: "project", include.content.title | sort:"date" | reverse | first%}
+        {% if include.content.github %}
+        <a class="card-link" href="{{ include.content.github }}" title="GitHub" aria-label="GitHub">
+            <i class="fab fa-github fa-lg"></i>
+        </a>
+        {% endif %}
+        {% if include.content.youtube %}
+        <a class="card-link" href="{{ include.content.youtube }}" title="YouTube" aria-label="YouTube">
+            <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        {% endif %}
     </div>
     <div class="card-footer">
         <small class="text-muted">Posted {{ include.content.date | date: '%d %B, %Y' }}</small>

@@ -3,15 +3,36 @@ layout: default
 ---
 
 <div class="container">
-   <h1>{{ page.title }}</h1>
-   <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-   {%assign project = site.projects | where: "title", page.project %}
-   Part of <a href="{{ project[0].url }}">{{ project[0].title }}</a>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+
+    {% assign project = site.projects | where: "title", page.project %}
+
+    {% if project[0].github %}
+    {% assign githubLink = project[0].github %}
+    {% else %}
+    {% assign githubLink = page.github %}
+    {% endif %}
+
+   
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <span>
+            {% if project[0] %}
+            Part of <a href="{{ project[0].url }}">{{ project[0].title }}</a>
+            {% endif %}
+        </span>
+
+        {% if githubLink %}
+        <a class="card-link ml-auto" href="{{ githubLink }}" title="GitHub" aria-label="GitHub">
+            GitHub <i class="fab fa-github fa-lg"></i>
+        </a>
+        {% endif %}
+    </div>
 
 
-   {{ content }}
+    {{ content }}
 
-   {% if page.unity_dir %}
-   {% include unityPlayer.html %}
-   {% endif %}
+    {% if page.unity_dir %}
+    {% include unityPlayer.html %}
+    {% endif %}
 </div>
