@@ -4,7 +4,7 @@ author: Edward Burden
 title : Thread Pool
 project :  C++
 category : Updates
-thumbnail: 
+thumbnail: Thread-Pool.png
 
 excerpt: A simple and easy to use threadpool.
 ---
