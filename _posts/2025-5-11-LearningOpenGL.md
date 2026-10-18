@@ -7,7 +7,7 @@ category : Updates
 thumbnail: learningOpenGl.png
 github: https://github.com/EdwardBurden/Learning_OpenGL
 
-excerpt: Learning how to render things in C++ with OpenGL.
+excerpt: Render 3D object in with OpenGL.
 ---
 
 As part of relearning C++, I've been working through OpenGL, since rendering is one of the main areas I want to understand properly. After years of Unity doing all of this for me, it was interesting to build it up from the ground up.

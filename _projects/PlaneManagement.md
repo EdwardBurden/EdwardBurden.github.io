@@ -1,10 +1,10 @@
 ---
 layout: project
-priority: 0
+priority: 1
 title: Plane mini-game
 description: In this game you control a fleet of planes as they leave airports and must be guided to their destination, avoid them crossing paths or your career as an aircraft marshal will be over before it starts.
 status: Closed
-
+github: https://github.com/EdwardBurden/PlanePrototype/tree/master
 thumbnail: Planes.png
 ---
 

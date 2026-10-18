@@ -5,8 +5,8 @@ title : Freight Announcement
 project : Freight
 category : Updates
 thumbnail: freight2.gif
-
-excerpt: New game please check it out!
+github: https://github.com/EdwardBurden/Freight
+excerpt: Island based logistics game.
 ---
 
 I just released a short video of the new game I've been working on!  

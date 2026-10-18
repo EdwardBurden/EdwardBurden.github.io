@@ -1,10 +1,11 @@
 ---
 layout: project
-priority: 1
+priority: 0
 title: Loot & Boot
 description: Pixel art based dungeon crawler game idea/prototype
 status: Closed
 thumbnail: Loot1.PNG
+github: https://github.com/EdwardBurden/Knights/tree/main
 ---
 
 I was playing Hades and getting excited for the next Diablo release so I thought I would have a little look online to learn about generating dungeons and thought I might as well have a go implementing in Unity.

@@ -1,10 +1,10 @@
 ---
 layout: project
-priority: 0
+priority: 1
 title: F.U.B.A.R
 description: A RTS game i tried putting together that was set to be a mix of Total War and Dawn of War...a little overambitious perhaps.
 status: Closed
-
+github: https://github.com/EdwardBurden/FUBAR
 thumbnail: FUBAR.PNG
 ---
 
